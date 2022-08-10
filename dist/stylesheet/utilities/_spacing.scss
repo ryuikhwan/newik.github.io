@@ -1,0 +1,66 @@
+@charset "UTF-8";
+// @UTILITIES
+// @SPACING
+
+@while $element-spacing-count > 0 {
+    // base : margin
+    .mt-#{$element-base-size * $element-spacing-count} {
+        margin-top:  0.25 * $element-spacing-count + rem;
+    }
+    .mb-#{$element-base-size * $element-spacing-count} {
+        margin-bottom:  0.25 * $element-spacing-count + rem;
+    }
+    .mr-#{$element-base-size * $element-spacing-count} {
+        margin-right:  0.25 * $element-spacing-count + rem;
+    }
+    .ml-#{$element-base-size * $element-spacing-count} {
+        margin-left:  0.25 * $element-spacing-count + rem;
+    }
+    .mx-#{$element-base-size * $element-spacing-count} {
+        margin: 0 0.25 * $element-spacing-count + rem;
+    }
+    .my-#{$element-base-size * $element-spacing-count} {
+        margin: 0.25 * $element-spacing-count + rem 0;
+    }
+
+    // base : padding
+    .pt-#{$element-base-size * $element-spacing-count} {
+        padding-top:  0.25 * $element-spacing-count + rem;
+    }
+    .pb-#{$element-base-size * $element-spacing-count} {
+        padding-bottom:  0.25 * $element-spacing-count + rem;
+    }
+    .pr-#{$element-base-size * $element-spacing-count} {
+        padding-right:  0.25 * $element-spacing-count + rem;
+    }
+    .pl-#{$element-base-size * $element-spacing-count} {
+        padding-left:  0.25 * $element-spacing-count + rem;
+    }
+    .px-#{$element-base-size * $element-spacing-count} {
+        padding: 0 0.25 * $element-spacing-count + rem;
+    }
+    .py-#{$element-base-size * $element-spacing-count} {
+        padding: 0.25 * $element-spacing-count + rem 0;
+    }
+
+    $element-spacing-count: $element-spacing-count - 1;
+}
+
+.m {
+    &-auto { margin: auto; }
+    &x-auto { margin: 0 auto; }
+    &y-auto { margin: auto 0; }
+    &a-0 { margin: 0; }
+    &t-0 { margin-top: 0; }
+    &b-0 { margin-bottom: 0; }
+    &l-0 { margin-left: 0; }
+    &r-0 { margin-right: 0; }
+}
+
+.p {
+    &a-0 { padding: 0; }
+    &t-0 { padding-top: 0; }
+    &b-0 { padding-bottom: 0; }
+    &l-0 { padding-left: 0; }
+    &r-0 { padding-right: 0; }
+}

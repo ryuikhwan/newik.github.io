@@ -1,0 +1,32 @@
+@charset "UTF-8";
+// @CUSTOMIZE
+// @COLOR THEME
+
+:root {
+    // @light theme
+    --primary-color: rgba(--primary, 1);
+    --secondary-color: rgba(--secondary, 1);
+
+    // backgrounds
+    --background: rgba(var(--neutral), 1);
+    --background-header: rgba(var(--neutral), 1);
+    --background-footer: rgba(var(--neutral), 1);
+
+    // elevation
+    --layer10: rgba(var(--neutral), 1);
+    --layer20: rgba(var(--neutral10), 1);
+    --layer30: rgba(var(--neutral20), 1);
+    --layer40: rgba(var(--neutral30), 1);
+    --layer50: rgba(var(--neutral40), 1);
+    --layer50: rgba(var(--neutral50), 1);
+
+
+    &.dark-theme {
+        // @dark theme
+
+        // backgrounds
+        --background: rgba(var(--neutral), 1);
+        --background-header: rgba(var(--neutral), 1);
+        --background-footer: rgba(var(--neutral), 1);
+    }
+}

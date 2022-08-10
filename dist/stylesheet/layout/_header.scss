@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.header-banner {
+    position: relative;
+    width: 100%;
+    height: $element-header-banner;
+
+    > div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}

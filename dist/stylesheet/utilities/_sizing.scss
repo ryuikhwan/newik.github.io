@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// @UTILITIES
+// @SIZING
+
+@while $element-sizing-count > 0 {
+    // base : width
+    .w-#{$element-base-size * $element-sizing-count} {
+        width:  0.25 * $element-sizing-count + rem;
+    }
+    .w-#{5*$element-sizing-count}p {
+        width: 5% * $element-sizing-count;
+    }
+
+    // base : height
+    .h-#{$element-base-size *$element-sizing-count} {
+        height:  0.25 * $element-sizing-count + rem;
+    }
+    .h-#{5*$element-sizing-count}p {
+        height: 5% * $element-sizing-count;
+    }
+
+    $element-sizing-count: $element-sizing-count - 1;
+}
+
+.w {
+    &-auto { width: auto; }
+    &-fit { width: fit-content; }
+    &-0 { width: 0; }
+}
+
+.h {
+    &-auto { height: auto; }
+    &-fit { height: fit-content; }
+    &-0 { height: 0; }
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+// @CUSTOMIZE
+// @COLOR PALETTE
+
+$target-colors: (
+    primary: #4b2af5,
+    secondary: #10044f,
+    neutral: #2c2c2c,
+    red-base: #bb121a,
+    orange-base: #bd640d,
+    yellow-base: #b79900,
+    green-base: #107154,
+    blue-base: #095aba,
+    purple-base: #6f38b1,
+
+    primary-dark: #6042f6,
+    secondary-dark: #000,
+    neutral-dark: #080808,
+    red-dark: #d7373f,
+    orange-dark: #da7b11,
+    yellow-dark: #d2b200,
+    green-dark: #268e6c,
+    blue-dark: #1473e6,
+    purple-dark: #864ccc,
+);
+
+$tones: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100;
+
+@mixin generate-color-var($key, $value) {
+    --#{$key}: #{$value};
+    --#{$key}: #{red($value)}, #{green($value)}, #{blue($value)};
+
+    @each $tone in $tones {
+        $light-value: adjust-color($value, $lightness: calc($tone / 2 * 1%));
+        $dark-value: adjust-color($value, $blackness: calc($tone / 2 * 1%));
+
+        --#{$key}#{$tone}-l: #{$light-value};
+        --#{$key}#{$tone}-l: #{red($light-value)}, #{green($light-value)}, #{blue($light-value)};
+
+        --#{$key}#{$tone}-d: #{$dark-value};
+        --#{$key}#{$tone}-d: #{red($dark-value)}, #{green($dark-value)}, #{blue($dark-value)};
+    }
+}
+
+:root {
+    @each $key, $value in $target-colors {
+        @include generate-color-var($key, $value);
+    }
+}

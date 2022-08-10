@@ -1,0 +1,49 @@
+.color-palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.color-palette > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+}
+.color-palette > div.primary {
+  background-color: rgb(var(--primary));
+}
+.color-palette > div.primary10-l {
+  background-color: rgb(var(--primary));
+}
+.color-palette > div.primary20-l {
+  background-color: rgb(var(--primary20-l));
+}
+.color-palette > div.primary30-l {
+  background-color: rgb(var(--primary30-l));
+}
+.color-palette > div.primary40-l {
+  background-color: rgb(var(--primary40-l));
+}
+.color-palette > div.primary50-l {
+  background-color: rgb(var(--primary50-l));
+}
+.color-palette > div.primary60-l {
+  background-color: rgb(var(--primary60-l));
+}
+.color-palette > div.primary70-l {
+  background-color: rgb(var(--primary70-l));
+}
+.color-palette > div.primary80-l {
+  background-color: rgb(var(--primary80-l));
+}
+.color-palette > div.primary90-l {
+  background-color: rgb(var(--primary90-l));
+}
+.color-palette > div.primary100-l {
+  background-color: rgb(var(--primary100-l));
+}
