@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.footer-banner {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: $element-footer-banner;
+
+    > div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: $font-size10;
+    }
+}

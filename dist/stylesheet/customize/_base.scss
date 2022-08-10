@@ -1,0 +1,157 @@
+@charset "UTF-8";
+// @CUSTOMIZE
+// @BASE
+
+// base : variables
+// base : variables : element sizes
+$element10: 0.625rem;
+$element12: 0.750rem;
+$element14: 0.875rem;
+$element16: 1.000rem;
+$element20: 1.250rem;
+$element24: 1.500rem;
+$element28: 1.750rem;
+$element32: 2.000rem;
+$element36: 2.250rem;
+$element40: 2.500rem;
+$element44: 2.750rem;
+$element48: 3.000rem;
+$element52: 3.250rem;
+$element56: 3.500rem;
+$element60: 3.750rem;
+$element64: 4.000rem;
+$element68: 4.250rem;
+$element72: 4.500rem;
+$element76: 4.750rem;
+$element80: 5.000rem;
+$element84: 5.250rem;
+$element88: 5.750rem;
+$element92: 6.000rem;
+$element96: 6.250rem;
+$element100: 6.750rem;
+
+// base : variables : font size
+$font-size10: 0.625rem;
+$font-size11: 0.688rem;
+$font-size12: 0.750rem;
+$font-size13: 0.813rem;
+$font-size14: 0.875rem;
+$font-size15: 0.938rem;
+$font-size16: 1.000rem;
+$font-size18: 1.125rem;
+$font-size20: 1.250rem;
+$font-size24: 1.500rem;
+$font-size26: 1.625rem;
+$font-size28: 1.750rem;
+$font-size30: 1.875rem;
+$font-size32: 2.000rem;
+$font-size34: 2.125rem;
+$font-size36: 2.250rem;
+
+// base : variables : icon size
+$icon-size10: 0.625rem;
+$icon-size11: 0.688rem;
+$icon-size12: 0.750rem;
+$icon-size13: 0.813rem;
+$icon-size14: 0.875rem;
+$icon-size15: 0.938rem;
+$icon-size16: 1.000rem;
+$icon-size18: 1.125rem;
+$icon-size20: 1.250rem;
+$icon-size24: 1.500rem;
+$icon-size26: 1.625rem;
+$icon-size28: 1.750rem;
+$icon-size30: 1.875rem;
+$icon-size32: 2.000rem;
+$icon-size34: 2.125rem;
+$icon-size36: 2.250rem;
+
+// base : variables : setting
+// base : 4point design
+$element-base-rem: 16px;
+$element-base-size: 4;
+
+$element-header-banner: $element52;
+$element-footer-banner: $element16;
+// $element-global-gater:
+
+$element-sizing-count: 25;
+$element-spacing-count: 25;
+
+
+// base : style preset
+html {
+    height: 100%;
+    font-size: $element-base-rem;
+    text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+// selection colors
+::selection {
+    // background-color: var(--background-primary);
+    // color: var(--text-white);
+}
+
+// default margins are removed
+body, blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
+
+// headings are unstyled
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+// lists are unstyled
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// images are block-level
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+// input, select browser style reset
+input {
+    &::-ms-reveal,
+    &::-ms-clear,
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+
+    &[type="number"] {
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            appearance: none;
+            -moz-appearance: textfield;
+        }
+    }
+}
+
+select {
+    appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+}

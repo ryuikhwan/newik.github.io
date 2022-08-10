@@ -1,0 +1,46 @@
+.color-palette {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    > div {
+        flex: 1;
+        height: 50px;
+
+        &.primary {
+            background-color: rgb(var(--primary));
+        }
+
+        &.primary10-l {
+            background-color: rgb(var(--primary));
+        }
+        &.primary20-l {
+            background-color: rgb(var(--primary20-l));
+        }
+        &.primary30-l {
+            background-color: rgb(var(--primary30-l));
+        }
+        &.primary40-l {
+            background-color: rgb(var(--primary40-l));
+        }
+        &.primary50-l {
+            background-color: rgb(var(--primary50-l));
+        }
+        &.primary60-l {
+            background-color: rgb(var(--primary60-l));
+        }
+        &.primary70-l {
+            background-color: rgb(var(--primary70-l));
+        }
+        &.primary80-l {
+            background-color: rgb(var(--primary80-l));
+        }
+        &.primary90-l {
+            background-color: rgb(var(--primary90-l));
+        }
+        &.primary100-l {
+            background-color: rgb(var(--primary100-l));
+        }
+    }
+}
